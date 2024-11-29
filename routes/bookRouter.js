@@ -1,14 +1,13 @@
 const router = require("express").Router();
-const bookRouter = router;
 
-bookRouter.get("/", (req, res) => {
+router.get("/", (req, res) => {
   res.status(200);
   res.send("Books Page");
 });
 
-bookRouter.get("/:id", (req, res) => { 
+router.get("/:id", (req, res) => { 
     res.status(200);
     res.send(`Book: ${req.params.id}`);
   });
 
-module.exports = bookRouter;
+module.exports = router;

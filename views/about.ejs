@@ -1,19 +1,15 @@
 <html>
   <head>
-    <title>Home Page</title>
+    <title>About</title>
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     
     <%- include('partials/navbar', {links: links}) %>
 
-    <ul>
-      <% users.forEach((user) => { %>
-        <%- include('users/user', {user: user}); %>
-      <% }); %>
-    </ul>
+    <h1>About</h1>
+    <p>About page content</p>
 
     <%- include('partials/footer') %>
-
   </body>
 </html>
